@@ -1,1 +1,1 @@
-This module provide some tools and version controller.
+This module provides some tools and version controller.

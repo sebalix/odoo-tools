@@ -1,1 +1,1 @@
-This module provide some tools for migrations.
+This module provides some tools for migrations.

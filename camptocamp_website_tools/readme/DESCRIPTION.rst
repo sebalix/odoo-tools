@@ -1,1 +1,1 @@
-This module provide some improvements for Website.
+This module provides some improvements for Website.
