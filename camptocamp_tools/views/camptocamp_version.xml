@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <record id="action_camptocamp_versions" model="ir.actions.act_url">
         <field name="name">Camptocamp Versions</field>
@@ -6,5 +6,11 @@
         <field name="target">self</field>
         <field name="url">/web/camptocamp/tools/versions</field>
     </record>
-    <menuitem id="menu_camptocamp_versions" parent="base.menu_administration" name="Camptocamp Versions" action="action_camptocamp_versions" groups="base.group_no_one"/>
+    <menuitem
+        id="menu_camptocamp_versions"
+        parent="base.menu_administration"
+        name="Camptocamp Versions"
+        action="action_camptocamp_versions"
+        groups="base.group_no_one"
+    />
 </odoo>
