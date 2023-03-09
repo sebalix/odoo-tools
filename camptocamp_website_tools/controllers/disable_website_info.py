@@ -2,8 +2,9 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import http
-from odoo.addons.website.controllers.main import Website
 from odoo.http import request
+
+from odoo.addons.website.controllers.main import Website
 
 
 class DisableWebsiteInfoController(Website):

@@ -8,7 +8,7 @@ from ..utils import create_index, install_trgm_extension
 
 
 class IrAttachment(models.Model):
-    _inherit = 'ir.attachment'
+    _inherit = "ir.attachment"
 
     # Overloaded to add an index in order to boost performance.
     # store_fname is used to filter attachments in some SQL queries from
@@ -22,15 +22,15 @@ class IrAttachment(models.Model):
         self._init_indexes(env)
 
     def _init_indexes(self, env):
-        """ Add index on ir_attachment.url to speed up the initial request
-            made each time a page is (re)loaded :
-            `select id from ir_attachment where url like '/web/content%'`
+        """Add index on ir_attachment.url to speed up the initial request
+        made each time a page is (re)loaded :
+        `select id from ir_attachment where url like '/web/content%'`
         """
         trgm_installed = install_trgm_extension(env)
         env.cr.commit()
 
         if trgm_installed:
-            index_name = 'ir_attachment_url_trgm_index'
+            index_name = "ir_attachment_url_trgm_index"
             create_index(
-                env.cr, index_name, self._table, 'USING gin (url gin_trgm_ops)'
+                env.cr, index_name, self._table, "USING gin (url gin_trgm_ops)"
             )
