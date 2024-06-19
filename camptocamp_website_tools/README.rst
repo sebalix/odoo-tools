@@ -17,7 +17,7 @@ Camptocamp Website
     :target: https://github.com/Camptocamp/odoo-tools/tree/12.0/camptocamp_website_tools
     :alt: Camptocamp/odoo-tools
 
-|badge1| |badge2| |badge3| 
+|badge1| |badge2| |badge3|
 
 This module provides some improvements for Website.
 

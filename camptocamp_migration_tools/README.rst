@@ -17,7 +17,7 @@ Camptocamp Migration tools
     :target: https://github.com/Camptocamp/odoo-tools/tree/12.0/camptocamp_migration_tools
     :alt: Camptocamp/odoo-tools
 
-|badge1| |badge2| |badge3| 
+|badge1| |badge2| |badge3|
 
 This module provides some tools for migrations.
 
